@@ -13,4 +13,4 @@ echo "sum2 is : $SUM2"
 echo "sum3 is : $SUM3"
 ####################################################################
 LEADERS=("modi" "putin" "Z")
-echo " all leaders : ${LEADERS[@]}
+echo " all leaders : ${LEADERS[@]}"
