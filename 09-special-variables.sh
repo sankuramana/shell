@@ -18,5 +18,6 @@ sleep 15 &
 # PID of the last command run in background
 echo "PID of the last background command: $!"
 echo " Exit status of last executed command: $?"
+echo "vales passed to the script: $1, $2"
 
 #$1, $2, $3...	Positional parameters (values passed to the script)
