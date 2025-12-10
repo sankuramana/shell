@@ -11,3 +11,6 @@ SUM3=$(($NUMBER3+$NAME))
 echo "sum is : $SUM"
 echo "sum2 is : $SUM2"
 echo "sum3 is : $SUM3"
+####################################################################
+LEADERS=("modi" "putin" "Z")
+echo " all leaders : ${LEADERS[@]}
