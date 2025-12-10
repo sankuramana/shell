@@ -8,4 +8,5 @@ elsefi[$NUMBER -eq 10  ]; then
     echo "given number $NUMBER is equal to 10"
 else
     echo "given number is: $NUMBER greather than 10"
+fi
     
