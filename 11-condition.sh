@@ -9,4 +9,10 @@ elif [ $NUMBER -eq 10 ]; then                     #elif  not elseif
 else
     echo "given number is: $NUMBER greather than 10"
 fi #end condition with fi
+
+
+#-lt
+#-gt
+#-eq
+#-ne not equal to
     
