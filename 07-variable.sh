@@ -2,4 +2,5 @@
 #envirornment variable it works untill linux server is live
  #echo "cource name is $COURCE"
  echo "cource name is $COURCE " #youhave create then only works
- echo "today date is $(date)"
+ echo "yesterday date is $data "
+ echo "timestampt executed $(date)"
