@@ -7,3 +7,5 @@ echo "current directory : $PWD"
 echo "current user name : $USER" #capital not small letter
 echo "home directory of the user: $HOME"
 echo "PID of the scripy: $$"
+sleep 15 & #this run backgroun not in forgrund
+echo "PID os the last command in background is : $!"
