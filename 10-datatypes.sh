@@ -16,3 +16,4 @@ LEADERS=("modi" "putin" "trumph")
 echo " all leaders : ${LEADERS[@]}"
 #index starts from 0 1 2 3...
 echo "First leader is : ${LEADERS[0]}"
+echo "First leader is : ${LEADERS[3]}" #asking which is not avilable
