@@ -14,3 +14,5 @@ echo "sum3 is : $SUM3"
 ####################################################################
 LEADERS=("modi" "putin" "trumph")
 echo " all leaders : ${LEADERS[@]}"
+#index starts from 0 1 2 3...
+echo "First leader is : ${LEADERS[0]}"
