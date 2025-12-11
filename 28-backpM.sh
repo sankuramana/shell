@@ -38,7 +38,7 @@ fi
 #then findout the files in 7days old
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 #to check emty or  not -z will check
-if [ ! -z $FILES ]; then
+if [ ! -z "{$FILES}" ]; then
     echo "files found"
     #if found need to zip into one 
     TIMESTAMP=$(date)
