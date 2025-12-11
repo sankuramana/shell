@@ -5,11 +5,11 @@ G="\e[32m"
 Y="\e[33"
 N="\e[0m"
 
-mkdir -p $LOGS_FOLDER
 
 LOGS_FOLDER="/var/log/installationlogs"
 SCRIT_NAME=$(echo $0 |cut -d "." -f1 )
 LOG_FILE="$LOGS_FOLDER/$SCRIT_NAME.log"
+mkdir -p $LOGS_FOLDER
 
 
 if [ $USERID -ne 0 ]; then
