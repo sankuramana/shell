@@ -6,9 +6,9 @@ N="\e[0m"
 
 LOGS_FOLDER="/var/log/installationlogs"
 SCRIT_NAME=$(echo $0 |cut -d "." -f1 )
-LOG_FILE="$LOGS_FOLDER/$SCRI_NAME.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIT_NAME.log"
 mkdir -p $LOGS_FOLDER
-if [ $USERID –ne 0 ]; then
+if [ $USERID -ne 0 ]; then
 echo “use root user to create folder in varfolder”
 exit1
 fi
