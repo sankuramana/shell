@@ -3,6 +3,8 @@ RED="\e[31m"
 GREEN="\e[32m"
 YELLOW="\e[33m"
 BLUE="\e[34m"
-echo -e "$RED printing red clor $N"
-echo -e "$GREEN printing red clor $N"
+echo -e "$RED printing red clor $N" #-e is mandatory
+echo -e "$GREEN printing green clor $N"
+echo -e "$YELLOW printing yellow clor $N"
+echo -e "$BLUE printing blue clor $N"
 
