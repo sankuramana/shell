@@ -1,0 +1,31 @@
+#!/bin/bash
+USERID=$(id -u)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
+if [ $USERID -ne 0 ]; then
+    echo "please run this script with root user"
+    exit 1
+fi
+
+VALIDATE()
+{
+if [ $1 -ne 0 ]; then
+    echo " $R instalation of $2 is failed $N"
+    exit 1
+else 
+    echo " $G $2 is installed successfully $N"
+fi
+}
+
+dnf install mysql -y
+
+VALIDATE $? "MYSQL" #passing arguments while calling function and chceking status code of previous command
+dnf install nginx -y
+VALIDATE $? "NGINX"
+
+dnf install python3 -y
+VALIDATE $? "PYTHON3"
+

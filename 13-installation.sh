@@ -1,3 +1,7 @@
 #!/bin/bash
 USERID=$(id -u)
-echo "user id is: $USERID"
+if [ $USERID -ne 0 ]; then
+    echo "please run this script with root user"
+    exit 1 #if not root user exit
+fi
+dnf install mysql -y
