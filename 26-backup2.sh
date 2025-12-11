@@ -52,7 +52,7 @@ if [ ! -z "${FILES}" ]; then #kalikakapothe
     ### Start Archeiving ###
     echo "Files found: $FILES"
     TIMESTAMP=$(date +%F-%H-%M)
-    ZIP_FILE_NAME="/app-logs-$TIMESTAMP.zip"
+    ZIP_FILE_NAME="dest/app-logs-$TIMESTAMP.zip"
     echo "Zip file name: $ZIP_FILE_NAME"
     find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME"
 
