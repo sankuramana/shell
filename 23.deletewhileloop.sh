@@ -10,9 +10,9 @@ FILES_TO_DELETE=$(find $FOLDER_TO_CREATE -name "*.log" -mtime +14)
     mkdir -p $FOLDER_TO_CREATE
     
  fi
-while  IFS= read -r files
+while  IFS= read -r file
 do 
-echo "deleting files "
-echo " $files "
+echo "deleting file "
+echo " $file"
 
 done <<<"$FILES_TO_DELETE"
