@@ -15,7 +15,7 @@ echo "Script starts at $(date) "| tee -a $LOG_FILE
 #dynamic script
 USAGE()
 {
-    echo "$R usage sh backup.sh <SOUR-DIR> <DEST-DIR> DAYS[OPTIONAL] ,default is 7 $N"
+    echo -e "$R usage sh backup.sh <SOUR-DIR> <DEST-DIR> DAYS[OPTIONAL] ,default is 7 $N"
 }
 
 if [ $# -lt 2 ]; then
