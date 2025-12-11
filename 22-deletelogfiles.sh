@@ -10,7 +10,7 @@ if [ ! -d $SOURCE_DIR ]; then
     echo "directory $SOURCE_DIR is not fount please create"
     exit 1
  fi
- FILES_TO_DELETE=$(find /var/log/app-logs/ -name "*.log" -mtime +14days)
+ FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +14)
  echo "Files to delete $FILES_TO_DELETE"
     
 
