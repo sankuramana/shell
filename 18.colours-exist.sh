@@ -24,7 +24,7 @@ if [ $? -ne 0 ];then
 dnf install mysql -y
 VALIDATE $? "MYSQL" #passing arguments while calling function &chceking status code of previous command
 else 
-    echo -e "MYSQL is already exsist $y SKIPPING $N"
+    echo -e "MYSQL is already exsist $Y SKIPPING $N"
 fi
 dnf list installed nginx
 if [ $? -ne 0 ];then    
