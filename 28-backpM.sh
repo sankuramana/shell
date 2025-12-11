@@ -7,7 +7,7 @@ if [ $USERID -ne 0 ]; then
  #logs
  LOGS_FOLDER=/var/log/shell-logs/
  SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
- LOG_FILE=$LOGS_FOLDER/$SCRIPT_NAME.log"
+ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
   mkdir -p $LOGS_FOLDER
 
  echo "folder creation is done $LOGS_FOLDER" &>>ShellOUTPUT.log
