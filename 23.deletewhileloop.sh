@@ -13,8 +13,6 @@ FILES_TO_DELETE=$(find $FOLDER_TO_CREATE -name "*.log" -mtime +14)
 while  IFS= read -r file
     do 
         echo "deleting file "
-        echo " $file"
         rm -f $file
-        echo "delted $file"
 
     done <<<"$FILES_TO_DELETE"
