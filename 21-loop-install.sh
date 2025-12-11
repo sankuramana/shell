@@ -26,6 +26,6 @@ dnf list installed $package
 if [ $? -ne 0 ];then
 dnf install $package -y
 else 
-echo -e "Existed $package already $R SKIPPING $N"
+echo -e "Existed $package already $Y SKIPPING $N"
 fi
 done
