@@ -19,3 +19,4 @@ echo "Files to delete:"
 echo "$FILES_TO_DELETE"
 rm -rf $FILES_TO_DELETE
 echo " deleted logfiles"
+
