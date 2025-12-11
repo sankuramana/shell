@@ -5,7 +5,7 @@ N="\e[0m"
 SOURCE_DIR=$1
 DESTINATION_DIR=$2
 
-DAYS={3:7}
+DAYS=${3:7} #if  not provided consider as 7days else 3 allocated automatically
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
     exit 1
@@ -35,6 +35,16 @@ if [ ! -d $DESTINATION_DIR ];then
     echo -e "$R destination dircetory $DESTINATION_DIR is not EXIST $N"
     exit 1
 fi
+#then findout the files in 7days old
+FILES=$(find -name "*.log" -mtime +14)
+#to check emty or  not -z will check
+if [ ! -z $FILES ]; then
+    echo "files found"
+else
+    echo -e "no files to archive.. $R skippinkg $N"
+ fi   
+
+
 
 
 
