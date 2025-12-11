@@ -10,8 +10,8 @@ if [ $USERID -ne 0 ]; then
  LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
   mkdir -p $LOGS_FOLDER
 
- echo "folder creation is done $LOGS_FOLDER | tee -a "$LOG_FILE"
+ echo "folder creation is done $LOGS_FOLDER |tee -a $LOG_FILE
  echo "SCRIPT_NAME iS $SCRIPT_NAME"
- echo "  hi :$LOG_FILE"
+ echo "  hi :$LOG_FILE "
 
 
