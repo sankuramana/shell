@@ -13,10 +13,10 @@ fi
 VALIDATE()
 {
 if [ $1 -ne 0 ]; then
-    echo " $R INSTALLING ... $2 is FAILURE $N"
+    echo -e " $R INSTALLING ... $2 is FAILURE $N"
     exit 1
 else 
-    echo " $G  INSTALLTION..... $2 SUCCESS $N"
+    echo -e " $G  INSTALLTION..... $2 SUCCESS $N"
 fi
 }
 
