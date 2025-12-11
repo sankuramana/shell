@@ -15,6 +15,6 @@ while  IFS= read -r file
         echo "deleting file "
         echo " $file"
         rm -f $file
-        echo "delted files"
+        echo "delted $file"
 
     done <<<"$FILES_TO_DELETE"
