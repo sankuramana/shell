@@ -28,11 +28,11 @@ if [ $# -lt 2 ]; then
 fi
 #chceking conditions
 if [ ! -d $SOURCE_DIR ];then
-    echo "$R Source dircetory $SOURCE_DIR dose not EXIST $N"
+    echo -e "$R Source dircetory $SOURCE_DIR dose not EXIST $N"
     exit 1
 fi
 if [ ! -d $DESTINATION_DIR ];then
-    echo "$R destination dircetory $DESTIONATION_DIR is not EXIST $N"
+    echo -e "$R destination dircetory $DESTIONATION_DIR is not EXIST $N"
     exit 1
 fi
 
