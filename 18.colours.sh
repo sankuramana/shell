@@ -13,19 +13,31 @@ fi
 VALIDATE()
 {
 if [ $1 -ne 0 ]; then
-    echo -e "  INSTALLING $2... $R is FAILURE $N"
+    echo -e "  INSTALLING $2... $R is FAILURE $N" #-e is mandatory
     exit 1
 else 
     echo -e "INSTALLTION $2.....  $G SUCCESS $N"
 fi
 }
-
+dnf list installed mysql
+if [ $? -ne 0];then
 dnf install mysql -y
-
-VALIDATE $? "MYSQL" #passing arguments while calling function and chceking status code of previous command
+VALIDATE $? "MYSQL" #passing arguments while calling function &chceking status code of previous command
+else 
+    echo "MYSQL is already exsist $y SKIPPING $N"
+fi
+dnf list installed nginx
+if [ $? -ne 0];then    
 dnf install nginx -y
 VALIDATE $? "NGINX"
-
+else 
+     echo "NGINX is Already exist $Y SKIPPING $N"
+fi
+dnf list installed python3
+if [ $? -ne 0];then
 dnf install python3 -y
 VALIDATE $? "PYTHON3"
+else
+    echo "NGINX EXIST already "$Y SKIPPING$N"
+fi
 
