@@ -2,6 +2,7 @@ USERID=$(id -u)
 #checking user or rootuser
 R="\e[31m"
 N="\e[0m"
+DAYS={3:7}
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
     exit 1
