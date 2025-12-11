@@ -1,5 +1,7 @@
 USERID=$(id -u)
 #checking user or rootuser
+R="\e[31m"
+N="\e[0m"
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
     exit 1
@@ -13,7 +15,7 @@ echo "Script starts at $(date) "| tee -a $LOG_FILE
 #dynamic script
 USAGE()
 {
-    echo "usage sh backup.sh <SOUR-DIR> <DEST-DIR> DAYS[OPTIONAL] ,default is 7"
+    echo "$R usage sh backup.sh <SOUR-DIR> <DEST-DIR> DAYS[OPTIONAL] ,default is 7 $N"
 }
 
 if [ $# -lt 2 ]; then
