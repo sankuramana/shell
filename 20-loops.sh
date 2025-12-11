@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in $@ #has to be next to eachother like no gap{1..10}
+for package in $@ #has to be next to eachother like no gap{1..10}
 do 
-echo $i
+echo $package
 done
