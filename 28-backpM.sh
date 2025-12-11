@@ -4,7 +4,7 @@ R="\e[31m"
 N="\e[0m"
 SOURCE_DIR=$1
 DESTINATION_DIR=$2
-DAYS=${3:7} #if  not provided consider as 7days else 3 allocated automatically
+DAYS=${3:-7} #if  not provided consider as 7days else 3 allocated automatically
 
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
