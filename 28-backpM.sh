@@ -44,7 +44,7 @@ if [ ! -z "${FILES}" ]; then
     TIMESTAMP=$(date +%F-%H-%M)
     ZIP_FILE_NAME="$DESTINATION_DIR/app-logs-$TIMESTAMP.zip"
     echo " zip file name $ZIP_FILE_NAME "
-    find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME" #-j
+    find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@  "$ZIP_FILE_NAME" #-j
 
 else
     echo -e "no files to archive.. $R skippinkg $N"
