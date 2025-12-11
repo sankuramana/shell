@@ -13,8 +13,6 @@ dnf list installed $package
 if [ $? -ne 0 ];then
 dnf install $package
 else 
-    echo -e "$package is istalled already... $Y SKIPPING $N "
-echo $package
-
+    echo -e " $package is istalled already... $Y SKIPPING $N "
 fi
 done
