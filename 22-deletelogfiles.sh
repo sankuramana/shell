@@ -4,7 +4,7 @@ R="\e[31m"
 N="\e[0m"
 
 #app-logs Directory
-SOURCE_DIR="/var/log/app-logs/"
+SOURCE_DIR="/var/log/sanku/"
 
 # Check and create directory
 if [ ! -d "$SOURCE_DIR" ]; then
