@@ -2,7 +2,7 @@
 USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
-Y="\e[33"
+Y="\e[33m"
 N="\e[0m"
 
 
@@ -32,7 +32,7 @@ if [ $? -ne 0 ]; then
 dnf install mysql -y
 VALIDATE $? "MYSQL" #passing arguments while calling function &chceking status code of previous command
 else 
-    echo -e "MYSQL is already exsist $Y SKIPPING $N"
+    echo -e "MYSQL is already exist $Y SKIPPING $N"
 fi
 
 dnf list installed nginx
