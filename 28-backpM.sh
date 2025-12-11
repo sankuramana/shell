@@ -1,6 +1,6 @@
 USERID=$(id -u)
 #checking user or rootuser
-if[ $USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
     exit 1
  fi
@@ -13,5 +13,5 @@ if[ $USERID -ne 0 ]; then
  echo "folder creation is done $LOGS_FOLDER" &>>ShellOUTPUT.log
  echo "SCRIPT_NAME iS $SCRIPT_NAME"
  echo " $LOG_FILE"
- 
+
 
