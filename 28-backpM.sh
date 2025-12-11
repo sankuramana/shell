@@ -36,7 +36,7 @@ if [ ! -d $DESTINATION_DIR ];then
     exit 1
 fi
 #then findout the files in 7days old
-FILES=$(find $SOURCE_DIR -name "*.log" tyep -f -mtime +$DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log" type -f -mtime +$DAYS)
 #to check emty or  not -z will check
 if [ ! -z "{$FILES}" ]; then
     echo "files found"
