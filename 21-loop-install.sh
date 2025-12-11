@@ -19,7 +19,13 @@ else
     echo -e "INSTALLTION $2.....  $G SUCCESS $N"
 fi
 }
+# $@  it displays the passed arguments to the script
 for package in $@ 
 do 
-echo "pakage is :$package"
+dnf list installed $package
+if [ $? -ne 0 ];then
+dnf install $package -y
+else 
+echo "Existed $package already $R SKIPPING $N"
+fi
 done
