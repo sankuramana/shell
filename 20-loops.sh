@@ -16,3 +16,4 @@ else
     echo "$package is istalled already... $Y SKIPPING $N "
 echo $package
 done
+fi
