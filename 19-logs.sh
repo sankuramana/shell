@@ -10,7 +10,7 @@ LOGS_FOLDER="/var/log/installationlogs"
 SCRIT_NAME=$(echo $0 |cut -d "." -f1 )
 LOG_FILE="$LOGS_FOLDER/$SCRIT_NAME.log"
 mkdir -p $LOGS_FOLDER
-echo "script executed at $(data)"
+echo "script executed at: $(date)"
 
 if [ $USERID -ne 0 ]; then
 echo “use root user to create folder in varfolder”
