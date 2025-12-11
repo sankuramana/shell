@@ -5,7 +5,7 @@ N="\e[0m"
 # file -name logfiles
 # -mtime +14days
 mkdir -p $SOURCE_DIR
-SOURCE_DIR=/var/log/app-logs
+SOURCE_DIR=/var/log
 if [ ! -d $SOURCE_DIR ]; then
     echo "directory $SOURCE_DIR is not fount please create"
 else
