@@ -12,6 +12,6 @@ if [ $USERID -ne 0 ]; then
 
  echo "folder creation is done $LOGS_FOLDER" &>>"LOG_FILE"
  echo "SCRIPT_NAME iS $SCRIPT_NAME"
- echo " $LOG_FILE"
+ echo "  hi :$LOG_FILE"
 
 
