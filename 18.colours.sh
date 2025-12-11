@@ -20,21 +20,21 @@ else
 fi
 }
 dnf list installed mysql
-if [ $? -ne 0];then
+if [ $? -ne 0 ];then
 dnf install mysql -y
 VALIDATE $? "MYSQL" #passing arguments while calling function &chceking status code of previous command
 else 
     echo -e "MYSQL is already exsist $y SKIPPING $N"
 fi
 dnf list installed nginx
-if [ $? -ne 0];then    
+if [ $? -ne 0 ];then    
 dnf install nginx -y
 VALIDATE $? "NGINX"
 else 
      echo -e "NGINX is Already exist $Y SKIPPING $N"
 fi
 dnf list installed python3
-if [ $? -ne 0];then
+if [ $? -ne 0 ];then
 dnf install python3 -y
 VALIDATE $? "PYTHON3"
 else
