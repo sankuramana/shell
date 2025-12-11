@@ -36,7 +36,7 @@ if [ ! -d $DESTINATION_DIR ];then
     exit 1
 fi
 #then findout the files in 7days old
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log" tyep -f -mtime +$DAYS)
 #to check emty or  not -z will check
 if [ ! -z "{$FILES}" ]; then
     echo "files found"
@@ -44,7 +44,7 @@ if [ ! -z "{$FILES}" ]; then
     TIMESTAMP=$(date)
     ZIP_FILE_NAME="$DESTINATION_DIR/app-logs-$TIMESTAMP.zip"
     echo " zip file name $IP_FILE_NAME "
-    find -name "*.log" -mtime $DAYS | zip -@ -j "$ZIP_FILE_NAME"
+    find -name "*.log" type -f -mtime $DAYS | zip -@ -j "$ZIP_FILE_NAME"
 
 else
     echo -e "no files to archive.. $R skippinkg $N"
