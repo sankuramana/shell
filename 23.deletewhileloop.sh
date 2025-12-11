@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 FOLDER_TO_CREATE=/var/log/sanku/
 FILES_TO_DELETE=$(find $FOLDER_TO_CREATE -name "*.log" -mtime +14)
 
