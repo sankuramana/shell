@@ -4,8 +4,8 @@ R="\e[31m"
 N="\e[0m"
 SOURCE_DIR=$1
 DESTINATION_DIR=$2
-
 DAYS=${3:7} #if  not provided consider as 7days else 3 allocated automatically
+
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
     exit 1
@@ -36,7 +36,7 @@ if [ ! -d $DESTINATION_DIR ];then
     exit 1
 fi
 #then findout the files in 7days old
-FILES=$(find -name "*.log" -mtime +$DAYS)
+FILES=$(find $SOURCE_DIR-name "*.log" -mtime +$DAYS)
 #to check emty or  not -z will check
 if [ ! -z $FILES ]; then
     echo "files found"
