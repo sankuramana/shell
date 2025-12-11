@@ -1,8 +1,8 @@
 #!/bin/bash
 USERID=$(id -u)
-R=”\e[31m”
-G=”\e[32m”
-Y=”\e[33m”
+R="\e[31]"
+G="\e[32m"
+Y="\e[33"
 N="\e[0m"
 
 LOGS_FOLDER="/var/log/installationlogs"
