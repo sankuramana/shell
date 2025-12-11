@@ -32,7 +32,7 @@ if [ ! -d $SOURCE_DIR ];then
     exit 1
 fi
 if [ ! -d $DESTINATION_DIR ];then
-    echo -e "$R destination dircetory $DESTIONATION_DIR is not EXIST $N"
+    echo -e "$R destination dircetory $DESTINATION_DIR is not EXIST $N"
     exit 1
 fi
 
