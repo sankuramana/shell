@@ -2,6 +2,9 @@ USERID=$(id -u)
 #checking user or rootuser
 R="\e[31m"
 N="\e[0m"
+SOURCE_DIR=$1
+DESTINATION_DIR=$2
+
 DAYS={3:7}
 if [ $USERID -ne 0 ]; then
     echo "please use root previliages for this"
@@ -21,6 +24,15 @@ USAGE()
 
 if [ $# -lt 2 ]; then
     USAGE
+    exit 1
+fi
+#chceking conditions
+if [ ! -d $SOURCE_DIR ];then
+    echo "$R Source dircetory $SOURCE_DIR dose not EXIST $N"
+    exit 1
+fi
+if [ ! -d $DESTINATION_DIR ];then
+    echo "$R destination dircetory $DESTIONATION_DIR is not EXIST $N"
     exit 1
 fi
 
