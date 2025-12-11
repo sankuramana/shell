@@ -9,9 +9,18 @@ if [ $USERID -ne 0 ]; then
  SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
  LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
   mkdir -p $LOGS_FOLDER
+echo "Script starts at $(date) "| tee -a $LOG_FILE
+#dynamic script
+USAGE()
+{
+    echo "usage sh backup.sh <SOUR-DIR> <DEST-DIR> DAYS[OPTIONAL] ,default is 7"
+}
 
- echo "folder creation is done $LOGS_FOLDER "| tee -a $LOG_FILE
- echo "SCRIPT_NAME iS $SCRIPT_NAME"
- echo "  hi :$LOG_FILE "
+if [ $# -lt 2 ]; then
+    USAGE
+    exit 1
+fi
+
+
 
 
