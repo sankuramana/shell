@@ -43,7 +43,7 @@ if [ ! -z "${FILES}" ]; then
     #if found need to zip into one 
     TIMESTAMP=$(date +%F-%H-%M)
     ZIP_FILE_NAME="$DESTINATION_DIR/app-logs-$TIMESTAMP.zip"
-    echo " zip file name $IP_FILE_NAME "
+    echo " zip file name $ZIP_FILE_NAME "
     find $SOURCE_DIR -name "*.log" -type f -mtime $DAYS | zip -@ -j "$ZIP_FILE_NAME"
 
 else
