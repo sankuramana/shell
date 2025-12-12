@@ -38,6 +38,13 @@ if [ ! -z "${FILES}" ];then  #double quotes
 else
     echo -e "no files to archive ....  $R SKIPPING $N"
 fi
+#deleteingfiles
+while IFS= read -r files
+do 
+echo "deleting $files"
+rm -rf $files
+echo "deleted $files"
+done <<< $FILES
 
 
 
