@@ -27,7 +27,7 @@ if [ ! -d $DESTINATION_DIRECTORY ]; then
 fi 
 #####find the .log file#############
 FILES=$(find -name "*.log" -type f -mtime +$DAYS)
-if [ ! -z '${FILES}'];then 
+if [ ! -z "${FILES}"];then  #double quotes
     echo "files found"
 else
     echo -e "no files to archive ....  $R SKIPPING $N"
