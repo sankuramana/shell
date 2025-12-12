@@ -1,5 +1,5 @@
 DISK_USAGE=$(df -hT| grep -v Filesystem)
-DISK_THRESHOLD=2 #usaualy we check if disk usage is more than 75
+DISK_THRESHOLD=2 #usaually we check if disk usage is more than 75
  
  while IFS= read -r space 
  do
