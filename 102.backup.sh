@@ -43,7 +43,7 @@ while IFS= read -r files
 do 
 echo "deleting $files"
 rm -rf $files
-echo "deleted $files"
+echo "deleted $"
 done <<< $FILES
 
 
