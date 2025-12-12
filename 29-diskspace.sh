@@ -6,7 +6,7 @@ while IFS= read -r line
 do 
 USAGE=$(echo $line | awk '{print $6}'| cut -d "%" -f1)
 PARTISION=$(echo $line |aws '{print $7}')
-if [ $USAGE -ge $DISK_THRESHOLD];then
+if [ $USAGE -ge $DISK_THRESHOLD ];then
     echo " Hig usage on $PARTISON: $USAGE"
 fi
 done <<< $DISK_USAGE
