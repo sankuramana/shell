@@ -11,12 +11,12 @@ mkdir -p $LOG_FOLDER
 echo "script executed at $(date)" |tee -a $LOG_FILE
 ########################################################
 #chceking two passing two folder to the script or not
-if [$# -lt 2 ];then
+if [ $# -lt 2 ];then
     echo "please have 2 argumunets source and destination"
     exit 1
 fi
 #Checking source folder is existing or not
-if [! -d $SOURCE_DIRECTORY ];then
+if [ ! -d $SOURCE_DIRECTORY ];then
     echo " source folder is not exist $SOURCE_DIRECTOR please chhcek"
     exit 1
 fi
