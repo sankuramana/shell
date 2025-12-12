@@ -48,7 +48,7 @@ fi
 FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
 
 
-if [ ! -z "${FILES}" ]; then #kalikakapothe
+if [ ! -z "${FILES}" ]; then #kalikakapothe #if files not empty
     ### Start Archeiving ###
     echo "Files found: $FILES"
     TIMESTAMP=$(date +%F-%H-%M)
