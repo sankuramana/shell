@@ -30,7 +30,7 @@ FILES=$(find -name "*.log" -type f -mtime +$DAYS)
 if [ ! -z '${FILES}'];then 
     echo "files found"
 else
-    echo "no files to archive ....  $R SKIPPING $N"
+    echo -e "no files to archive ....  $R SKIPPING $N"
 fi
 
 
