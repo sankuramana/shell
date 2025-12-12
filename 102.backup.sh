@@ -28,7 +28,7 @@ fi
 #####find the .log file#############
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -type f -mtime +$DAYS) 
 #donot forget to give sourec directory
-if [ ! -z "${FILES}"];then  #double quotes
+if [ ! -z "${FILES}" ];then  #double quotes
     echo "files found"
 else
     echo -e "no files to archive ....  $R SKIPPING $N"
