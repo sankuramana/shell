@@ -8,7 +8,7 @@ SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME-app.log"
 mkdir -p $LOG_FOLDER
 ########################################################
-echo "script executed at $(date)" |tee -a $LOG_FILE
+echo "script executed at $(date)" | tee -a $LOG_FILE
 ########################################################
 #chceking two passing two folder to the script or not
 if [ $# -lt 2 ];then
