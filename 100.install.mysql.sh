@@ -7,7 +7,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 dnf list installed mysql
-if [ $? -ne 0];then
+if [ $? -eq 0 ];then
     echo "installed mysql already"
     exit 1
 fi
