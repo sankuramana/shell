@@ -6,7 +6,9 @@
 # echo " print $i"
 # done
 ###############################################################
-while i in {100..1}
-do
-echo "print $i"
-done
+#odd or even
+#if (number%2) -eq 0) 
+if [ (($number%0)) -eq 0]; then
+    echo " $number is even"
+else 
+    echo "$number is ood"
