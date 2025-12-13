@@ -75,3 +75,10 @@ if [ ! -z "${FILES}" ]; then #kalikakapothe #if files not empty
 else
     echo -e "No files to archeive ... $Y SKIPPING $N"
 fi
+
+whil IFS= read -r logfiles
+do
+echo "deleting the log-file $logfiles "
+rm -rf $logfiles
+
+done <<< $FILES
