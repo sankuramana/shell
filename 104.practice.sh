@@ -8,7 +8,8 @@
 ###############################################################
 #odd or even
 #if (number%2) -eq 0) 
-if [ (($number%0)) -eq 0]; then
+number=$1
+if [ ($number%0) -eq 0 ]; then
     echo " $number is even"
 else 
     echo "$number is ood"
