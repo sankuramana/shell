@@ -69,16 +69,10 @@ if [ ! -z "${FILES}" ]; then #kalikakapothe #if files not empty
             echo "Deleted the file: $filepath"
         done <<< $FILES
     else
-        echo "Archieval ... $R FAILURE $N"
+        echo -e "Archieval ... $R FAILURE $N"
         exit 1
     fi
 else
     echo -e "No files to archeive ... $Y SKIPPING $N"
 fi
 
-whil IFS= read -r logfiles
-do
-echo "deleting the log-file $logfiles "
-rm -rf $logfiles
-
-done <<< $FILES
