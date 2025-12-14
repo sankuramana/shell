@@ -1,7 +1,7 @@
 #!/bin/bash
 DIRECTORY=$1
 if [ -d $DIRECTORY ];then
-    echo "$DIRCETORY is exist"
+    echo "$DIRECTORY is exist"
 else 
-    echo "$DIRCETORY is not Exist "
+    echo "$DIRECTORY is not Exist "
 fi
