@@ -8,12 +8,13 @@
 ###############################################################
 #odd or even
 #if (number%2) -eq 0) 
-number=$1
+# number=$1
 
-if (( number % 2 == 0 )); then
+# if (( number % 2 == 0 )); then
 
-    echo " $number is even"
-else 
-    echo "$number is ood"
+#     echo " $number is even"
+# else 
+#     echo "$number is ood"
 
-fi
+# fi
+#####################################################################
