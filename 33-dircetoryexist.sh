@@ -5,4 +5,5 @@ if [ -d $DIRECTORY ];then
 else 
     echo "$DIRECTORY is not Exist "
      mkdir -p $1
+     echo " $1 is created"
 fi
