@@ -5,4 +5,4 @@ for total in $numbers
 do
 ((count++))
 done
-echo "$total"
+echo " total numbers count is :$total"
