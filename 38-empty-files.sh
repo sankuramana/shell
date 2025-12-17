@@ -8,4 +8,4 @@ if [ ! -s $emptyfiles ];then
 fi
 
 done
-echo "$emptyfiles"
+echo "$count"
