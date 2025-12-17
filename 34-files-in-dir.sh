@@ -1,7 +1,8 @@
 #!/bin/bash
- dircetory=/home/ec2-user/files-dircetory
- 
-  for files in $directory/*
-  do 
-  echo "$files"
-  done
+
+directory=/home/ec2-user/files-dircetory
+
+for file in "$directory"/*
+do
+  echo "$file"
+done
