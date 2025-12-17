@@ -10,7 +10,8 @@
 # done
 # #
 count=0
-for file in /home/ec2-user/files-dircetory/*
+dircetory=/home/ec2-user/files-dircetory/*
+for file in $dircetory
 do
   ((count++))
 done
