@@ -1,5 +1,5 @@
 #!/bin/bash
-count=0
+count=10
 for file in /home/ec2-user/files-dircetory/*
 do
   if [ ! -s "$file" ]; then
