@@ -5,3 +5,4 @@ for count in $list
 do 
 ((countt++))
 done
+echo " count of name is: $countt"
