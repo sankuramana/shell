@@ -1,8 +1,8 @@
 #!/bin/bash
-count=10
+count=0
 for file in /home/ec2-user/files-dircetory/*
 do
-  if [ ! -s "$file" ]; then
+  if [ -s "$file" ]; then
     ((count++))
   fi
 done
