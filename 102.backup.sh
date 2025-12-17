@@ -22,9 +22,11 @@ if [ ! -d $SOURCE_DIRECTORY ];then
     echo -e "$R source folder is not exist $SOURCE_DIRECTOR please chhcek $N"
     exit 1
 fi
+
 if [ ! -d $DESTINATION_DIRECTORY ]; then
     echo " destination directory is $DESTINATION_DIRECTOR not exist"
 fi 
+
 ##### find the .log files #############
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -type f -mtime +$DAYS) 
 #donot forget to give sourec directory
