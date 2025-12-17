@@ -4,6 +4,6 @@ for i in $numbers
 do
 if ((i %2 ==0 ));then
   ((count++))
-echo " $count"
 fi
 done
+echo " $count"
