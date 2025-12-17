@@ -9,10 +9,12 @@
 #   echo "$file"
 # done
 # #
-count=0
-dircetory=/home/ec2-user/files-dircetory/*
-for file in $dircetory
-do
-  ((count++))
-done
-echo "Total files: $count"
+#print number of files in a folder"
+
+# count=0
+# dircetory=/home/ec2-user/files-dircetory/*
+# for file in $dircetory
+# do
+#   ((count++))
+# done
+# echo "Total files: $count"
