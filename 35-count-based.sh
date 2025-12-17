@@ -1,10 +1,8 @@
 #!/bin/bash
 numbers="1 2 3"
-count=0
-
-for num in $numbers
+count=1
+for total in $numbers
 do
-  ((count++))
+((count++))
 done
-
-echo "$count"
+echo "$total"
