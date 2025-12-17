@@ -1,9 +1,8 @@
 #!/bin/bash
+numbers=1 2 3 4 5 6 
 count=0
-for file in /home/ec2-user/files-dircetory/*
+for count in $numbers
 do
-  if [ -s "$file" ]; then
-    ((count++))
-  fi
+((count++))
 done
-echo "Empty files: $count"
+echo "$count"
