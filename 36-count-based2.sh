@@ -1,6 +1,6 @@
 #!/bin/bash
 list="ramana ram raju gopal varma"
-countt=5
+countt=0
 for count in $list
 do 
 ((countt++))
