@@ -1,7 +1,7 @@
 #!/bin/bash
 
 directory=/home/ec2-user/files-dircetory
-echo "avilable files are"
+echo "Available Files Are::"
 for file in $directory/*
 do
   echo "$file"
