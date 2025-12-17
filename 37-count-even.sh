@@ -2,7 +2,8 @@ numbers="1 2 3 4 5 6 7 8 9 10"
 count=0
 for i in $numbers
 do
-if [ ($numbers %2) -eq 0 ];then
-  $count++ 
-done
+if ((i %2) -eq 0 );then
+  ((count++))
 echo " $count"
+fi
+done
