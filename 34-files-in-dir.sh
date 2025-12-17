@@ -2,7 +2,7 @@
 
 directory=/home/ec2-user/files-dircetory
 
-for file in "$directory"/*
+for file in $directory/*
 do
   echo "$file"
 done
