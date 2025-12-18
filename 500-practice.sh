@@ -1,4 +1,4 @@
 #!/bin/bas
-diskspace=$(df -hT)
+diskspace=$(df -hT | grep -v Fileystem)
 echo "disk space of server is:"
 echo "$diskspace"
