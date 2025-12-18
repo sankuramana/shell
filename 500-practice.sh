@@ -6,7 +6,7 @@ threshold=20
 
 while IFS= read -r space
 do
-useage=echo ($space |awk 'print{$6}' |cut -d "%" -f1)
+useage= echo $space |awk 'print{$6}' |cut -d "%" -f1
 
 done <<<$diskspace
 echo "$space"
