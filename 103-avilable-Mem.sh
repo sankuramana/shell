@@ -2,7 +2,7 @@
 #COLORS
 N="\e[0m"
 R="\e[31m"
-AVAILABLE_MEMORY=$(free -h |grep Mem | awk '{print $7}')
+AVAILABLE_MEMORY=$(free -h |grep Mem | awk '{print $7}'|cut -d "mi" -f1)
 FREE_SPACE_IN_MEMORY=$(free -h |grep Mem | awk '{print $4}')
 echo -e "${R} Available memeory is $AVAILABLE_MEMORY ${N}"
 echo -e "${R} Available Free memory is $FREE_SPACE_IN_MEMORY ${N}"
